@@ -1,0 +1,11 @@
+{
+  "name": "smart-campus-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --prefix smart-campus/client",
+    "build": "cd smart-campus/client && npm run build",
+    "preview": "npm run preview --prefix smart-campus/client"
+  }
+}

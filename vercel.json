@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "cd smart-campus/client && npm install",
+  "buildCommand": "cd smart-campus/client && npm run build",
+  "outputDirectory": "smart-campus/client/dist"
+}
