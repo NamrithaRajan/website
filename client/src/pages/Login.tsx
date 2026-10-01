@@ -88,7 +88,7 @@ export default function Login() {
 
             <div style={{ marginBottom: 20 }}>
               <label style={{ fontSize: 12, color: 'var(--text-muted)', display: 'block', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                Password
+                Access Code
               </label>
               <div style={{ position: 'relative' }}>
                 <Lock size={14} color="var(--text-muted)" style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)' }} />
@@ -136,7 +136,7 @@ export default function Login() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: 10, fontSize: 10, color: 'var(--text-muted)' }}>
-            All demo accounts use password: <span className="font-mono" style={{ color: 'var(--accent-cyan)' }}>campus123</span>
+            All demo accounts use access code: <span className="font-mono" style={{ color: 'var(--accent-cyan)' }}>campus123</span>
           </div>
         </div>
       </div>

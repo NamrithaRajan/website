@@ -14,7 +14,7 @@ const analyticsController = require('../controllers/analyticsController');
 const aiController = require('../controllers/aiController');
 
 // Rate limiting
-const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100, message: { error: 'Too many requests' } });
+const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 10000, message: { error: 'Too many requests' } });
 const aiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 30, message: { error: 'AI rate limit exceeded' } });
 
 router.use(apiLimiter);
