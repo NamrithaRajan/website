@@ -77,27 +77,7 @@ export default function Analytics() {
         </div>
       </div>
 
-      {/* Carbon Footprint Summary */}
-      <div className="card" style={{ marginTop: 20 }}>
-        <h3 className="section-title"><Leaf size={16} color="var(--accent-green)" /> Carbon Footprint Report</h3>
-        <div className="grid-3">
-          <div style={{ padding: 16, background: 'var(--bg-secondary)', borderRadius: 8, textAlign: 'center' }}>
-            <Leaf size={24} color="var(--accent-green)" style={{ margin: '0 auto 8px' }} />
-            <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--accent-green)' }}>{analytics?.co2ReducedKg?.toFixed(1) || 0}</div>
-            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>kg CO₂ Reduced Today</div>
-          </div>
-          <div style={{ padding: 16, background: 'var(--bg-secondary)', borderRadius: 8, textAlign: 'center' }}>
-            <DollarSign size={24} color="var(--accent-green)" style={{ margin: '0 auto 8px' }} />
-            <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--accent-green)' }}>{'$'}{analytics?.monthlyCostSavings?.toFixed(0) || 0}</div>
-            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>Monthly Cost Savings</div>
-          </div>
-          <div style={{ padding: 16, background: 'var(--bg-secondary)', borderRadius: 8, textAlign: 'center' }}>
-            <TrendingUp size={24} color="var(--accent-purple)" style={{ margin: '0 auto 8px' }} />
-            <div style={{ fontSize: 28, fontWeight: 800, color: 'var(--accent-purple)' }}>{analytics?.aiEfficiencyIndex?.toFixed(1) || 0}%</div>
-            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>AI Efficiency Index</div>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 }

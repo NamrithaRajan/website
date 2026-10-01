@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Leaf, DollarSign, Brain, TrendingUp, AlertTriangle, Server, Activity } from 'lucide-react';
+import { Zap, Leaf, IndianRupee, Brain, TrendingUp, AlertTriangle, Server, Activity } from 'lucide-react';
 
 interface Props {
   analytics: any;
@@ -57,19 +57,7 @@ export default function EnergyKPIWidget({ analytics }: Props) {
 
   const kpis = [
     {
-      icon: <Zap size={18} />, label: 'Total Power Draw', value: analytics.totalPowerDrawKw?.toFixed(2),
-      unit: 'kW', color: '#f59e0b', colorClass: 'yellow', trend: undefined,
-    },
-    {
-      icon: <Activity size={18} />, label: 'Peak Load', value: analytics.peakLoadKw?.toFixed(2),
-      unit: 'kW', color: '#f97316', colorClass: 'yellow', trend: undefined,
-    },
-    {
-      icon: <Leaf size={18} />, label: 'CO₂ Reduced', value: analytics.co2ReducedKg?.toFixed(1),
-      unit: 'kg', color: '#10b981', colorClass: 'green', trend: 'Saved today',
-    },
-    {
-      icon: <DollarSign size={18} />, label: 'Monthly Savings', value: `$${analytics.monthlyCostSavings?.toFixed(0)}`,
+      icon: <IndianRupee size={18} />, label: 'Monthly Savings', value: `₹${analytics.monthlyCostSavings?.toFixed(0)}`,
       unit: '', color: '#10b981', colorClass: 'green', trend: 'vs. baseline',
     },
     {
